@@ -97,6 +97,7 @@ const SessionCreation = () => {
             name="sessionName"
             className={validationMessage.sessionName ? 'is-invalid' : ''}
             placeholder=""
+            value={session.sessionName}
             onChange={handleSession}
           />
           <Form.Control.Feedback type="invalid">
@@ -111,6 +112,7 @@ const SessionCreation = () => {
             name="sessionDescription"
             className={validationMessage.sessionDescription ? 'is-invalid' : ''}
             placeholder=""
+            value={session.sessionDescription}
             onChange={handleSession}
           />
           <Form.Control.Feedback type="invalid">
@@ -125,6 +127,7 @@ const SessionCreation = () => {
             name="sessionManagers"
             className={validationMessage.sessionManagers ? 'is-invalid' : ''}
             placeholder=""
+            value={session.sessionManagers}
             onChange={handleSession}
           />
           <Form.Control.Feedback type="invalid">
